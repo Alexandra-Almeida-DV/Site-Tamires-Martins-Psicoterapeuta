@@ -3,14 +3,14 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Fab } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-const FloatButton = styled(Fab)(({ theme }) => ({
+const FloatButton = styled(Fab)(() => ({
   position: 'fixed',
   bottom: '20px',
   right: '20px',
-  backgroundColor: '#587596', // Cor do WhatsApp
+  backgroundColor: '#587596', 
   color: '#fff',
   '&:hover': {
-    backgroundColor: '#93AOC6', // Cor ao passar o mouse
+    backgroundColor: '#F59D99',
   },
 }));
 

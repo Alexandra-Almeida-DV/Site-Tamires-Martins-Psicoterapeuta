@@ -15,9 +15,10 @@ const SobreMim: React.FC = () => {
         alignItems: 'center',
         textAlign: 'center',
         gap: '1.5rem', 
+        marginTop: { xs: '50px', md: '150px' } 
       }}
     >
-      <Typography variant="h3" color="#587596">
+      <Typography variant="h3" color="#587596" fontFamily='"Quicksand", sans-serif' marginTop= '2rem'>
         Sobre Mim
       </Typography>
       <Typography
@@ -25,7 +26,8 @@ const SobreMim: React.FC = () => {
         sx={{
           maxWidth: '600px',
           fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem', lg: '1.25rem' },
-          marginTop: '0.5rem', 
+          marginTop: '2rem',
+          fontFamily: '"Noto Serif", serif' 
         }}
       >
         Olá, meu nome é Tamires, sou psicóloga clínica, formada pela Universidade de Araraquara (UNIARA). 
@@ -34,7 +36,7 @@ const SobreMim: React.FC = () => {
         Durante os atendimentos, prezo pelo acolhimento, escuta ativa e sigilo, com foco no atendimento de qualidade aos 
         meus pacientes. Para isso, estou sempre em busca de atualização nos temas em psicologia.
       </Typography>
-      <Box sx={{ textAlign: 'center', marginTop: '2rem' }}>
+      <Box sx={{ textAlign: 'center', marginTop: '1rem' }}>
       <WhatsAppButton />
       </Box>
     </Box>

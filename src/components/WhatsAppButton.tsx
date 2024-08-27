@@ -3,7 +3,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-const StyledButton = styled(Button)(({ theme }) => ({
+const StyledButton = styled(Button)(() => ({
   backgroundColor: '#587596', // Cor do WhatsApp
   color: '#fff',
   display: 'flex',
@@ -13,8 +13,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
   textTransform: 'none',
   fontWeight: 'bold',
   '&:hover': {
-    backgroundColor: '#587596', // Cor ao passar o mouse
-  },
+    backgroundColor: '#FCC9CD',
+  }
 }));
 
 const WhatsAppButton: React.FC = () => {

@@ -16,7 +16,9 @@ const WhatsAppButton: React.FC = () => {
       target="_blank"
       sx={{ 
         backgroundColor: '#587596', 
-        '&:hover': { backgroundColor: '#587596' },
+        '&:hover': {
+    backgroundColor: '#FCC9CD',
+       },
         fontWeight: 'bold'
       }}
     >

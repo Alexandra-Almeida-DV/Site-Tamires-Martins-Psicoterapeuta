@@ -15,12 +15,16 @@ const Footer: React.FC = () => {
         justifyContent: 'center',
         padding: '1rem',
         backgroundColor: '#FCC9CD',
-        marginTop: '2rem',
+        marginTop: '3rem',
         width: '100%',
+        '&:hover': {
+    backgroundColor: '#93AOC6',
+  }
       }}
     >
       {/* Seção de ícones de redes sociais */}
-      <Box sx={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
+      <Box sx={{ display: 'flex', gap: '1rem', marginBottom: '1rem'
+   }}>
         <IconButton
           component="a"
           href="https://wa.me/5516997366306"
@@ -34,7 +38,7 @@ const Footer: React.FC = () => {
 
         <IconButton
           component="a"
-          href="https://wa.me/5516997366306"
+          href="https://www.instagram.com/tamiresmartins.psi?igsh=OXI3eDdnOHJicmVq"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -46,10 +50,10 @@ const Footer: React.FC = () => {
 
         <IconButton
           component="a"
-          href="'http://mailto:contato@tamiresmartinspsi.com.br'"
+          href="mailto:contato@tamiresmartinspsi.com.br?subject=Consulta&body=Olá, gostaria de agendar uma consulta."
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Instagram"
+          aria-label="E-mail"
           color="primary"
         >
           < AlternateEmailIcon fontSize="large" />

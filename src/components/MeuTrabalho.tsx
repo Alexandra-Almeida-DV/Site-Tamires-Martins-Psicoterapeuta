@@ -14,22 +14,24 @@ const MeuTrabalho: React.FC = () => {
         alignItems: 'center',
         textAlign: 'center',
         gap: '1.5rem',
+        marginTop: '1rem'
       }}
     >
-      <Typography variant="h3" sx={{ marginBottom: '1.5rem' }}>
+      <Typography variant="h3" sx={{ marginBottom: '2rem', fontFamily:'"Quicksand", sans-serif', marginTop: '2rem' }}>
         Meu Trabalho
       </Typography>
       <Typography
         variant="h6"
         sx={{
-          maxWidth: '600px', // Limita a largura máxima do texto
+          maxWidth: '600px', 
           fontSize: {
-            xs: '0.875rem', // Tamanho da fonte para telas extra pequenas
-            sm: '1rem',     // Tamanho da fonte para telas pequenas
-            md: '1.125rem', // Tamanho da fonte para telas médias
-            lg: '1.25rem',  // Tamanho da fonte para telas grandes
+            xs: '0.875rem', 
+            sm: '1rem',     
+            md: '1.125rem', 
+            lg: '1.25rem',  
           },
-          marginTop: '0.5rem',
+          marginTop: '1rem',
+          fontFamily: '"Noto Serif", serif'
         }}
       >
         As sessões são realizadas semanalmente de forma online. Esta
