@@ -15,10 +15,10 @@ const SobreMim: React.FC = () => {
         alignItems: 'center',
         textAlign: 'center',
         gap: '1.5rem', 
-        marginTop: { xs: '50px', md: '150px' } 
+        marginTop: { xs: '-150px', md: '40px' } 
       }}
     >
-      <Typography variant="h3" color="#587596" fontFamily='"Quicksand", sans-serif' marginTop= '2rem'>
+      <Typography variant="h3" color="#587596" fontFamily='"Quicksand", sans-serif' marginTop= '0rem'>
         Sobre Mim
       </Typography>
       <Typography
@@ -26,7 +26,7 @@ const SobreMim: React.FC = () => {
         sx={{
           maxWidth: '600px',
           fontSize: { xs: '0.875rem', sm: '1rem', md: '1.125rem', lg: '1.25rem' },
-          marginTop: '2rem',
+          marginTop: '0rem',
           fontFamily: '"Noto Serif", serif' 
         }}
       >

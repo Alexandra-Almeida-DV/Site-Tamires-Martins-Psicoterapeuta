@@ -12,14 +12,15 @@ const Psicoterapia: React.FC = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        marginTop: '1rem',
         textAlign: 'center',
-        gap: { xs: '2rem', md: '2.5rem' },  
+        gap: { xs: '2rem', md: '2.5rem' }, 
       }}
     >
       <Grid 
         container 
         spacing={{ xs: 4, md: 8 }}  
-        sx={{ marginTop: { xs: '2rem', md: '3rem' } }}
+        sx={{ marginTop: { xs: '1rem', md: '0.5rem' } }}
       >
         <Grid item xs={12} md={6}>
           <Box sx={{ padding: { xs: '1rem', md: '3rem' } }}>
@@ -27,7 +28,7 @@ const Psicoterapia: React.FC = () => {
             <Typography 
               variant="h3" 
               sx={{ 
-                marginBottom: '3rem',
+                marginTop: '0.5rem',
                 color: '#587596',  
                 fontWeight: 'lighter', 
                 letterSpacing: '0.05em',
@@ -59,7 +60,7 @@ const Psicoterapia: React.FC = () => {
             <Typography 
               variant="h3" 
               sx={{ 
-                marginBottom: '3rem',
+                marginTop: '0.5rem',
                 color: '#587596',
                 fontWeight: 'lighter',
                 letterSpacing: '0.05em',
@@ -71,6 +72,7 @@ const Psicoterapia: React.FC = () => {
             <Typography 
               variant="body1" 
               sx={{ 
+                marginTop: '2rem',
                 color: '#587596',
                 lineHeight: 1.8,
                 fontFamily: '"Noto Serif", serif'
@@ -86,7 +88,7 @@ const Psicoterapia: React.FC = () => {
 
       <Box 
         sx={{ 
-          marginTop: '4rem', 
+          marginTop: '1rem', 
           width: '100%', 
           textAlign: 'center'
         }}
