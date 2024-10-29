@@ -15,9 +15,9 @@ const WhatsAppButton: React.FC = () => {
       href={whatsappLink}
       target="_blank"
       sx={{ 
-        backgroundColor: '#587596', 
+        backgroundColor: '#3D5361', 
         '&:hover': {
-    backgroundColor: '#FCC9CD',
+    backgroundColor: '#3D5361',
        },
         fontWeight: 'bold'
       }}

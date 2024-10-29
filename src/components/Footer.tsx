@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         alignItems: 'center',
         justifyContent: 'center',
         padding: '1rem',
-        backgroundColor: '#FCC9CD',
+        backgroundColor: '#D6B7B5',
         marginTop: '3rem',
         width: '100%',
         '&:hover': {
@@ -61,9 +61,13 @@ const Footer: React.FC = () => {
       </Box>
 
       {/* Seção de copyright */}
-      <Typography variant="body2" color="textprimary">
+      <Typography variant="body1" color="#3D5361" fontFamily= '"Quicksand", sans-serif'>
         <CopyrightIcon sx={{ fontSize: 'inherit', verticalAlign: 'middle' }} /> Tamires Martins 2024
       </Typography>
+
+      <Typography variant="body2" color="#3D5361" fontFamily= '"Quicksand", sans-serif'>
+        Desenvolvido por: Alexandra Almeida dev.
+       </Typography> 
     </Box>
   );
 };

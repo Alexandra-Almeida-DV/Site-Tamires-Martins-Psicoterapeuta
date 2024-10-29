@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 
 const StyledButton = styled(Button)(() => ({
   backgroundColor: '#3D5361', // Cor do WhatsApp
-  color: '#F5F0ED',
+  color: '#fff',
   display: 'flex',
   alignItems: 'center',
   padding: '10px 20px',
@@ -24,7 +24,7 @@ const WhatsAppButton: React.FC = () => {
 
   return (
     <StyledButton onClick={handleClick} startIcon={<WhatsAppIcon />}>
-      Fale comigo!
+      Agendar sessão
     </StyledButton>
   );
 };

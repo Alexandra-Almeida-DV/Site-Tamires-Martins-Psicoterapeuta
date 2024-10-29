@@ -1,9 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import { motion, useAnimation } from 'framer-motion';
-import fundopsicoterapia from '../assets/images/fundopsicoterapia.jpg';
+import fundopsicooncologia from '../assets/images/fundopsicooncologia.png';
+import Agendarsessão from './Agendarsessão';
 
-const Psicoterapia: React.FC = () => {
+const Psicooncologia: React.FC = () => {
   const controls = useAnimation();
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
@@ -31,32 +32,36 @@ const Psicoterapia: React.FC = () => {
   }, [controls]);
 
   const titleAnimation = {
-    hidden: { opacity: 0, y: -100 }, // Efeito da esquerda para a direita
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, x: 100 }, // Efeito da esquerda para a direita
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
   };
 
   const textAnimation = {
-    hidden: { opacity: 0, y: -100 }, // Efeito da esquerda para a direita
-    visible: { opacity: 1, y: 0, transition: { duration: 0.9, delay: 0.3 } },
+    hidden: { opacity: 0, x: 100 }, // Efeito da esquerda para a direita
+    visible: { opacity: 1, x: 0, transition: { duration: 0.9, delay: 0.3 } },
   };
 
+  const buttonAnimation = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.9, delay: 0.6 } },
+  };
 
   return (
     <Box
       ref={sectionRef}
-      id="psicoterapia"
+      id="psicooncologia"
       sx={{
-        minHeight: { xs: '70vh', md: '80vh' },
+        minHeight: { xs: '80vh', md: '80vh' },
         padding: '2rem 2rem',
-        backgroundColor: 'rgba(255, 255, 255, 0.8)', // Filtro escuro para aumentar contraste e transparência
+        backgroundColor: 'rgba(255, 255, 255, 0.5)', // Filtro escuro para aumentar contraste e transparência
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'start',
-        textAlign: 'start',
-        gap: '2.5rem', // Aumenta o espaçamento entre os elementos
+        textAlign: 'center',
+        gap: '2.0rem', // Aumenta o espaçamento entre os elementos
         marginTop: { xs: '50px', md: '40px' },
-        backgroundImage: `url(${fundopsicoterapia})`,
-        backgroundSize: { xs: '92% 80%', md: 'contain' },
+        backgroundImage: `url(${fundopsicooncologia})`,
+        backgroundSize: { xs: '100% 90%', md: 'conver' },
         backgroundPosition: { xs: 'center', md: 'center' },
         backgroundBlendMode: 'overlay',
         backgroundAttachment: 'fixed',
@@ -70,7 +75,7 @@ const Psicoterapia: React.FC = () => {
           fontFamily='"Dancing Script", cursive'
           sx={{ mb: '2rem' }} // Adiciona margem inferior
         >
-          Psicoterapia
+          Psico-oncologia
         </Typography>
       </motion.div>
 
@@ -86,21 +91,25 @@ const Psicoterapia: React.FC = () => {
             mb: '4rem', // Adiciona margem inferior maior para espaçamento do botão
           }}
         >
-           A psicoterapia é uma modalidade de cuidado em saúde mental
-              realizada através do trabalho colaborativo entre o terapeuta e o
-              paciente. Através dela você pode compartilhar suas angústias,
-              dúvidas, dificuldades, problemas para que consiga lidar com suas
-              demandas de forma saudável. Dentro de um espaço seguro, ético,
-              acolhedor e sem julgamentos. Buscaremos juntos, estratégias para
-              o enfrentamento de momentos de crise e dificuldades. Além disso,
-              você será convidado a explorar algo único, seu autoconhecimento.
-
+          A psico-oncologia é uma área que une a oncologia e a psicologia
+              com o objetivo de aprimorar a assistência ao paciente e
+              favorecer a atenção integral às suas necessidades
+              biopsicossociais e espirituais. As ações da psico-oncologia
+              visam a garantir três aspectos principais: a integralidade da
+              assistência, a qualidade de vida, a dignidade da morte. O ideal
+              é que a assistência seja oferecida em todas as fases do
+              tratamento.
 
         </Typography>
       </motion.div>
 
+      <motion.div initial="hidden" animate={controls} variants={buttonAnimation}>
+        <Box sx={{ textAlign: 'center', marginTop: '1.5rem' }}>
+          <Agendarsessão />
+        </Box>
+      </motion.div>
     </Box>
   );
 };
 
-export default Psicoterapia;
+export default Psicooncologia;
