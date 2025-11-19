@@ -92,7 +92,7 @@ const SobreMim: React.FC = () => {
           }}
         >
           Olá, meu nome é Tamires, sou psicóloga clínica, formada pela Universidade de Araraquara (UNIARA).
-          Atuo pela abordagem psicanalítica e atualmente sou pós-graduanda em psico-oncologia.
+          Atuo pela abordagem psicanalítica e em psico-oncologia.
           Realizo atendimentos online a brasileiros, maiores de 18 anos e idosos, que residem no Brasil ou no exterior.
           Durante os atendimentos, prezo pelo acolhimento, escuta ativa e sigilo, com foco no atendimento de qualidade aos
           meus pacientes. Para isso, estou sempre em busca de atualização nos temas em psicologia.
