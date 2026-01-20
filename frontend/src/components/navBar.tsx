@@ -92,9 +92,9 @@ const menuItems = [
                   src={logopsi}
                   alt="Logo Psi"
                   sx={{
-                    width: { xs: '100px', sm: '100px', md: '150px', lg: '180px' },
+                    width: { xs: '100px', sm: '100px', md: '300px',g: '350px' },
                     height: 'auto',
-                    marginTop: '-60px',
+                    marginTop: '-20px',
                   }}
                 />
               </a>
@@ -104,7 +104,7 @@ const menuItems = [
                   src={logoTamires}
                   alt="Logo Tamires"
                   sx={{
-                    width: { xs: '200px', sm: '150px', md: '200px', lg: '250px' },
+                    width: { xs: '200px', sm: '150px', md: '200px', lg: '300px' },
                     height: 'auto',
                     marginTop: '0px',
                   }}

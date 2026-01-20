@@ -21,12 +21,12 @@ const transporter = nodemailer.createTransport({
 });
 
 // ROTA DE TESTE
-app.get("/", (req, res) => {
-  res.send("Backend rodando!");
+app.get("/api", (req, res) => {
+  res.json({ status: "API ok", message: "Backend rodando!" });
 });
 
 // ROTA DE ENVIO DE EMAIL
-app.post("/enviar-email", async (req, res) => {
+app.post("/api/enviar-email", async (req, res) => {
   const { nome, email, mensagem } = req.body;
 
   if (!nome || !email || !mensagem) {

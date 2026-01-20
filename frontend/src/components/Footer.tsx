@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
 
       {/* Seção de copyright */}
       <Typography variant="body1" color="#3D5361" fontFamily= '"Quicksand", sans-serif'>
-        <CopyrightIcon sx={{ fontSize: 'inherit', verticalAlign: 'middle' }} /> Tamires Martins 2024
+        <CopyrightIcon sx={{ fontSize: 'inherit', verticalAlign: 'middle' }} /> Tamires Martins 2026
       </Typography>
 
       <Typography variant="body2" color="#3D5361" fontFamily= '"Quicksand", sans-serif'>
