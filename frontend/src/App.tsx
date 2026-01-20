@@ -9,7 +9,7 @@ import Psicooncologia from './components/Psicooncologia';
 import InstagramSection from './components/InstagramSecsion';
 import MeuTrabalho from './components/MeuTrabalho';
 import QuoteSection from './components/QuoteSection';
-import ContactSection from './components/ContactSecsion';
+import ContactSection from './components/ContactSection';
 
 const App: React.FC = () => {
   return (

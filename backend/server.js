@@ -26,10 +26,13 @@ app.get("/api", (req, res) => {
 });
 
 // ROTA DE ENVIO DE EMAIL
-app.post("/api/enviar-email", async (req, res) => {
-  const { nome, email, mensagem } = req.body;
+app.post("/enviar-email", async (req, res) => {
+  console.log("📩 Dados recebidos:", req.body);
 
-  if (!nome || !email || !mensagem) {
+  const { nome, email, celular, cidade, motivo } = req.body;
+
+  if (!nome || !email || !celular || !cidade || !motivo) {
+    console.log("❌ Campos faltando");
     return res.status(400).json({ error: "Todos os campos são obrigatórios." });
   }
 
@@ -38,22 +41,27 @@ app.post("/api/enviar-email", async (req, res) => {
     to: process.env.EMAIL_TO || process.env.EMAIL_USER,
     subject: `Novo contato do site - ${nome}`,
     html: `
-      <h2>Nova mensagem do site:</h2>
+      <h2>Novo contato pelo site</h2>
       <p><strong>Nome:</strong> ${nome}</p>
       <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Mensagem:</strong></p>
-      <p>${mensagem}</p>
+      <p><strong>Celular:</strong> ${celular}</p>
+      <p><strong>Cidade:</strong> ${cidade}</p>
+      <p><strong>Motivo:</strong></p>
+      <p>${motivo}</p>
     `,
   };
 
   try {
+    console.log("📤 Tentando enviar email...");
     await transporter.sendMail(mailOptions);
-    res.json({ success: true, message: "Email enviado com sucesso!" });
+    console.log("✅ Email enviado com sucesso!");
+    res.json({ success: true });
   } catch (error) {
-    console.error("Erro ao enviar email:", error);
+    console.error("🔥 ERRO AO ENVIAR EMAIL:", error);
     res.status(500).json({ error: "Erro ao enviar email." });
   }
 });
+
 
 const PORT = 4000;
 app.listen(PORT, () =>
